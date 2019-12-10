@@ -66,7 +66,7 @@ export class UserListComponent extends LitElement {
             </thead>
             <tbody>
               ${this.tableData.map((item: any, index: number) => {
-                item.id = index;
+                item.id = index + 1;
                 return html`
                   <user-view-component
                     user="${JSON.stringify(item)}"
